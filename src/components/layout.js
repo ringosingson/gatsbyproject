@@ -7,6 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Helmet from "react-helmet"
@@ -31,7 +32,13 @@ const Layout = ({ children }) => (
             title
           }
         }
+        file(relativePath: { regex: "/bg/" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
       }
     `}
     render={data => (
@@ -49,6 +56,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
+        <Img fluid={data.file.childImageSharp.fluid} />
         <MainLayout>
           <div>{children}</div>
           <Archive />
