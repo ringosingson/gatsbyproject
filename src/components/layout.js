@@ -31,6 +31,7 @@ const Layout = ({ children }) => (
             title
           }
         }
+              ...GatsbyImageSharpFluid_tracedSVG
       }
     `}
     render={data => (
