@@ -1,7 +1,7 @@
 ---
 slug: "/first-post"
 date: "2019-03-15"
-title: "Our First Post"
+title: "My First Post"
 ---
 
 #Hello Gatsby

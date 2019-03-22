@@ -1,7 +1,7 @@
 ---
 slug: "/second-post"
 date: "2019-03-17"
-title: "Our Second Post"
+title: "My Second Post"
 ---
 
 #Hello My Second Post
