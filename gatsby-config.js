@@ -3,8 +3,10 @@ module.exports = {
     title: `Gatsbyproject rinz`,
     description: `Kick off your next, great Gatsby project with this default starter. just playing with gatsby.`,
     author: `@RingoSingson`,
+    siteUrl: `https://angry-tesla-a2aa58.netlify.com/`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sharp",
@@ -48,6 +50,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`,
   ],
 }
